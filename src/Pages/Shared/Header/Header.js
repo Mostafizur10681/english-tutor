@@ -32,7 +32,7 @@ const Header = () => {
                             user ?
                                 <button onClick={handleSignOut} className='btn btn-danger' >Sign Out</button>
                                 :
-                                <Link className='link-items rounded-pill bg-warning px-3 py-2 header-login' eventKey={2} to="/login">
+                                <Link className='link-items btn btn-warning header-login' eventKey={2} to="/login">
                                     Login
                                 </Link>}
                     </Nav>
