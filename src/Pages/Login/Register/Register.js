@@ -14,7 +14,6 @@ const Register = () => {
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Your Name</Form.Label>
-
                     <Form.Control type="name" placeholder="Enter Name" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -35,7 +34,7 @@ const Register = () => {
                 <p>Already have an Account? <Link style={{ textDecoration: 'none' }} to='/login'>Please Login</Link></p>
                 <div className='d-flex justify-center align-items-center'>
                     <div className='w-50 orLine'></div>
-                    <p className='mt-3 mx-4'>OR</p>
+                    <p className='mt-3 mx-4'>or</p>
                     <div className='w-50 orLine'></div>
                 </div>
                 <Button variant="primary" type="submit" className='mb-2 button w-50 mx-auto d-block'>
