@@ -10,6 +10,8 @@ const Register = () => {
 
     const handleRegister = event => {
         event.preventDefault()
+        // commit
+
     }
     return (
         <div className='w-50 mx-auto my-5 bg-light px-5'>
