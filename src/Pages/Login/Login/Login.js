@@ -28,6 +28,7 @@ const Login = () => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value
+        console.log(email, password)
         signInWithEmailAndPassword(email, password)
     }
 
@@ -68,26 +69,10 @@ const Login = () => {
                 <Button variant="primary" type="submit" className='mb-2 button w-50 mx-auto d-block'>
                     Login
                 </Button>
-                <p>New in English Tutor? <Link style={{ textDecoration: 'none' }} to='/register'>Please Register</Link></p>
+                <p>New in English Tutor? <Link style={{ textDecoration: 'none' }} to='/register' onClick={handleRegister}>Please Register</Link></p>
                 <p className='mt-2'>Forget Password? <Link className='text-primary text-decoration-none' to='/register' onClick={resetPassword}>Reset Password</Link> </p>
                 <SocialIcon></SocialIcon>
-                {/* <div className='d-flex justify-center align-items-center'>
-                    <div className='w-50 orLine'></div>
-                    <p className='mt-3 mx-4'>OR</p>
-                    <div className='w-50 orLine'></div>
-                </div>
-                <Button variant="primary" type="submit" className='mb-2 button w-50 mx-auto d-block'>
-                    <img width={30} src={google} alt="" />
-                    <span className='ms-2'>SignIn With Google</span>
-                </Button>
-                <Button variant="primary" type="submit" className='mb-2 button w-50 mx-auto d-block'>
-                    <img width={30} src={facebook} alt="" />
-                    <span className='ms-2' >SignIn With Facebook</span>
-                </Button>
-                <Button variant="primary" type="submit" className='mb-3 button w-50 mx-auto d-block'>
-                    <img width={30} src={github} alt="" />
-                    <span className='ms-2'>SignIn With GitHub</span>
-                </Button> */}
+
             </Form>
         </div>
     );

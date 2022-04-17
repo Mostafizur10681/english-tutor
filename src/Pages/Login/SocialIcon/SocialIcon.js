@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import google from '../../../images/google.png'
@@ -11,16 +11,17 @@ const SocialIcon = () => {
     const navigate = useNavigate()
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+    const [signInWithFacebook, user2, loading2, error2] = useSignInWithFacebook(auth);
 
     let errorElements;
 
-    if (error || error1) {
+    if (error || error1 || error2) {
         errorElements = <div>
             <p className='text-danger'>Error: {error?.message} {error1?.message}</p>
         </div>
     }
 
-    if (user || user1) {
+    if (user || user1 || user2) {
         navigate('/home')
     }
     return (
@@ -36,7 +37,7 @@ const SocialIcon = () => {
                     <img style={{ width: '30px' }} src={google} alt="" />
                     <span className='ms-2'>SignIn With Google</span>
                 </button>
-                <button type="button" style={{ backgroundColor: 'rgb(94, 166, 169)' }} class="btn btn-primary w-50 d-block mx-auto my-2">
+                <button onClick={() => signInWithFacebook()} type="button" style={{ backgroundColor: 'rgb(94, 166, 169)' }} class="btn btn-primary w-50 d-block mx-auto my-2">
                     <img style={{ width: '30px' }} src={facebook} alt="" />
                     <span className='ms-2'>SignIn With Facebook</span>
                 </button>
