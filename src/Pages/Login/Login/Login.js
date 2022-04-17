@@ -7,10 +7,13 @@ import github from '../../../images/github.png'
 import './Login.css'
 
 const Login = () => {
+    const handleLoginForm = event => {
+        event.preventDefault()
+    }
     return (
         <div className='w-50 mx-auto my-5 bg-light px-5'>
             <h1 className='pt-2 text-center login-header'>Please Login</h1>
-            <Form>
+            <Form onSubmit={handleLoginForm}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
