@@ -1,0 +1,12 @@
+.bannerHeading {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .bannerHeading {
+        color: #fff;
+        font-size: 30px;
+    }
+}

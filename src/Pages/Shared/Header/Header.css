@@ -1,0 +1,14 @@
+.link-items {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+}
+
+.link-items:hover {
+    color: rgb(89, 216, 219);
+}
+
+.footer-link {
+    list-style-type: circle;
+}
