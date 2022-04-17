@@ -8,10 +8,13 @@ import { Link, useNavigate } from 'react-router-dom';
 const Register = () => {
     const navigate = useNavigate();
 
+    const handleRegister = event => {
+        event.preventDefault()
+    }
     return (
         <div className='w-50 mx-auto my-5 bg-light px-5'>
             <h1 className='pt-2 text-center login-header'>Please Register</h1>
-            <Form>
+            <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Your Name</Form.Label>
                     <Form.Control type="name" placeholder="Enter Name" />
