@@ -1,8 +1,9 @@
-.orLine {
-    height: 1px;
+.button {
     background-color: rgb(75, 131, 133);
+    color: white;
 }
 
-.login-header {
+.button:hover {
+    background-color: #fff;
     color: rgb(75, 131, 133);
 }

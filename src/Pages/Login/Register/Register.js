@@ -4,6 +4,7 @@ import google from '../../../images/google.png'
 import facebook from '../../../images/facebook.png'
 import github from '../../../images/github.png'
 import { Link, useNavigate } from 'react-router-dom';
+import SocialIcon from '../SocialIcon/SocialIcon';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -37,7 +38,8 @@ const Register = () => {
                     Login
                 </Button>
                 <p>Already have an Account? <Link style={{ textDecoration: 'none' }} to='/login'>Please Login</Link></p>
-                <div className='d-flex justify-center align-items-center'>
+                <SocialIcon></SocialIcon>
+                {/* <div className='d-flex justify-center align-items-center'>
                     <div className='w-50 orLine'></div>
                     <p className='mt-3 mx-4'>or</p>
                     <div className='w-50 orLine'></div>
@@ -53,7 +55,7 @@ const Register = () => {
                 <Button variant="primary" type="submit" className='mb-3 button w-50 mx-auto d-block'>
                     <img width={30} src={github} alt="" />
                     <span className='ms-2'>SignIn With GitHub</span>
-                </Button>
+                </Button> */}
             </Form>
         </div>
     );
