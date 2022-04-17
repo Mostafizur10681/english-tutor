@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "IELTS Course",
+        "description": "The International English Language Testing System (IELTS) is designed to help you work, study or migrate to a country where English is the native language. This includes countries such as Australia, Canada, New Zealand, the UK and USA.Your ability to listen, read, write and speak in English will be assessed during the test.",
+        "img": "https://i.ibb.co/vJhgBML/ielts.png",
+        "price": "7000"
+    },
+    {
+        "id": "2",
+        "name": "Listening & Specking ",
+        "description": "Reading, writing, speaking and listening – the four foundational skills of language learning.You can’t build a house without a strong foundation . Similarly, you won’t become a well-rounded speaker of a language without building upon the four foundations of language learning.",
+        "img": "https://i.ibb.co/jfHxTxL/teaching.png",
+        "price": "5000"
+    },
+    {
+        "id": "3",
+        "name": "University Admission English Course",
+        "description": "To be eligible for university studies in Bangladesh, you must show that you meet the English requirements for the course or programme.For courses and programmes at the bachelor's level, the general entry requirement for English is studies equivalent to the Bangladesh upper secondary course English 6",
+        "img": "https://i.ibb.co/CVxN8R8/fucking.png",
+        "price": "3500"
+    }
+]

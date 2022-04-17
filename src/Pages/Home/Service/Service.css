@@ -1,0 +1,25 @@
+.service {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: rgb(251, 251, 251);
+}
+
+.text {
+    color: rgb(75, 131, 133);
+}
+
+.description {
+    color: gray;
+}
+
+.image {
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.price {
+    color: rgb(192, 12, 9);
+}

@@ -4,5 +4,15 @@
 }
 
 .login-header {
+    color: #4b8385;
+}
+
+.button {
+    background-color: rgb(75, 131, 133);
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #fff;
     color: rgb(75, 131, 133);
 }
