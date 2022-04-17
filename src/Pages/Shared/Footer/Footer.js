@@ -8,14 +8,11 @@ const Footer = () => {
     const today = new Date();
     const year = today.getFullYear();
     return (
-        <div class="footer-dark mt-5">
-            <footer>
-
-                <p className='text-center'>
-                    <small>Copywrite &copy; {year} | By Mostafizur Rahman</small>
-                </p>
-            </footer>
-        </div>
+        <footer class="footer-dark mt-5 py-2">
+            <p className='text-center mt-2'>
+                <small>Copywrite &copy; {year} | By Mostafizur Rahman</small>
+            </p>
+        </footer>
     );
 };
 
