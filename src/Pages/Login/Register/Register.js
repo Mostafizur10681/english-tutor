@@ -6,7 +6,7 @@ import github from '../../../images/github.png'
 import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     return (
         <div className='w-50 mx-auto my-5 bg-light px-5'>
