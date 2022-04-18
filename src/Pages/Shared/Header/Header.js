@@ -8,6 +8,7 @@ import logo from '../../../images/logo.png'
 import './Header.css'
 
 const Header = () => {
+    // Header Section
     const [user] = useAuthState(auth);
     const handleSignOut = () => {
         signOut(auth);

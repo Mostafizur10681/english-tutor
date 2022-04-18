@@ -3,6 +3,7 @@ import Service from '../Service/Service';
 import './Services.css'
 
 const Services = () => {
+    // All services
     const [services, setServices] = useState([]);
 
     useEffect(() => {

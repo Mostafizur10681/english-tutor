@@ -1,14 +1,12 @@
 import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import google from '../../../images/google.png'
-import facebook from '../../../images/facebook.png'
-import github from '../../../images/github.png'
 import { Link, useNavigate } from 'react-router-dom';
 import SocialIcon from '../SocialIcon/SocialIcon';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 
 const Register = () => {
+    // Registation Page
     const nameRef = useRef('')
     const emailRef = useRef('')
     const passwordRef = useRef('')
@@ -17,31 +15,10 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const navigate = useNavigate();
 
-    // const handleNameBlur = event => {
-    //     console.log(event.target.value)
-    // }
-
-    // const handleEmailBlur = event => {
-    //     console.log(event.target.value)
-    // }
-
-    // const handlePasswordBlur = event => {
-    //     console.log(event.target.value)
-    // }
-    // if (error) {
-    //     return (
-    //         <div>
-    //             <p>Error: {error.message}</p>
-    //         </div>
-    //     );
-    // }
-    // if (loading) {
-    //     return <p>Loading...</p>;
-    // }
     const handleUseNavigateRegister = () => {
         navigate('/login')
     }
@@ -49,6 +26,7 @@ const Register = () => {
     if (user) {
         navigate('/home')
     }
+
 
     const handleOnSubmitRegister = event => {
         event.preventDefault();
@@ -81,9 +59,9 @@ const Register = () => {
                 </Form.Group>
                 {error}
                 <Button variant="primary" type="submit" className='mb-2 button w-50 mx-auto d-block'>
-                    Login
+                    Register
                 </Button>
-                <p>Already have an Account? <Link style={{ textDecoration: 'none' }} to='/login' onClick={handleUseNavigateRegister}>Please Login</Link></p>
+                <p className='text-dark'>Already have an Account? <Link style={{ textDecoration: 'none' }} to='/login' onClick={handleUseNavigateRegister}>Please Login</Link></p>
                 <SocialIcon></SocialIcon>
 
             </Form>

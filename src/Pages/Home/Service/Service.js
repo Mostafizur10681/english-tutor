@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
+
+    // Single Service
     const { id, name, img, description, price } = service;
 
     const navigate = useNavigate();

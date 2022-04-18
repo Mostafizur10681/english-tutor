@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -7,8 +7,11 @@ import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Login.css'
 import SocialIcon from '../SocialIcon/SocialIcon';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
+    // Login Page
     const [
         signInWithEmailAndPassword,
         user,
@@ -45,8 +48,14 @@ const Login = () => {
 
     const resetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('Sent email');
+        console.log(email);
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else {
+            toast('Please enter your email address');
+        }
     }
     return (
         <div className='w-50 mx-auto my-5 bg-light px-5'>
@@ -69,10 +78,10 @@ const Login = () => {
                 <Button variant="primary" type="submit" className='mb-2 button w-50 mx-auto d-block'>
                     Login
                 </Button>
-                <p>New in English Tutor? <Link style={{ textDecoration: 'none' }} to='/register' onClick={handleRegister}>Please Register</Link></p>
-                <p className='mt-2'>Forget Password? <Link className='text-primary text-decoration-none' to='/register' onClick={resetPassword}>Reset Password</Link> </p>
+                <p className='text-dark'>New in English Tutor? <Link style={{ textDecoration: 'none' }} to='/register' onClick={handleRegister}>Please Register</Link></p>
+                <p className='text-dark'>Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
                 <SocialIcon></SocialIcon>
-
+                <ToastContainer></ToastContainer>
             </Form>
         </div>
     );

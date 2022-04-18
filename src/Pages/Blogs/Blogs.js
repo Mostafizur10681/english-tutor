@@ -2,6 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
+        // All Blogs 
         <div className='container'>
             <h1 className='services-title mt-3 mb-2 '>Blogs </h1>
             <hr style={{ width: '35%', margin: '0  auto' }} className='mb-4' />

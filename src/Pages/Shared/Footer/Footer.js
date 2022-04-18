@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import './Footer.css'
 
 const Footer = () => {
+    // Footer Section
     const today = new Date();
     const year = today.getFullYear();
     return (

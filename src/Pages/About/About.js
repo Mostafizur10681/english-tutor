@@ -3,6 +3,7 @@ import './About.css'
 import sourav from '../../../src/images/sourav.png'
 const About = () => {
     return (
+        // About Page
         <div className='container'>
             <h1 className='services-title mt-3 mb-2 '>About </h1>
             <hr style={{ width: '35%', margin: '0  auto' }} className='mb-4' />
@@ -15,7 +16,7 @@ const About = () => {
                     <h3 className='text-warning'> Md.Mostafizur Rahman</h3>
                     <p > I'm a very good learner. I want to learn every day to grow up my skills.
                         I'm also a hard worker and dedicated person.
-                        I have completed my graduation from Daffofil Internation University in Computer Scirnce and Enginerring.
+                        I have completed my graduation from Daffodil International University in Computer Science and Engineering.
                         I'm expert in some programming language like JavaScript, React JS, Phython. I also expert in some framework like
                         Bootstrap, Tailwind.
                     </p>

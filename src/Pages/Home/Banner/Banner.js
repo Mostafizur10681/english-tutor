@@ -6,6 +6,7 @@ import banner3 from '../../../images/banner3.jpg'
 import './Banner.css'
 
 const Banner = () => {
+    // Banner section
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
