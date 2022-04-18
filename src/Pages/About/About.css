@@ -5,11 +5,12 @@
 }
 
 .about {
-    background-color: rgb(102, 133, 134)
+    background-color: rgb(106, 112, 112)
 }
 
 p {
     font-size: 16px;
     padding-left: 5px;
     padding-right: 5px;
+    color: white;
 }

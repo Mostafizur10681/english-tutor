@@ -8,7 +8,7 @@ const About = () => {
             <hr style={{ width: '35%', margin: '0  auto' }} className='mb-4' />
             <div className='row my-5 align-items-center shadow-lg p-3 mb-5 about rounded'>
                 <h2 className='about-me-title text-center'>About Me</h2>
-                <div className='col-lg-4 col-12 rounder-circle'>
+                <div className='col-lg-4 col-12'>
                     <img className='img-fluid rounded-circle' src={sourav} alt="" />
                 </div>
                 <div className='col-lg-8 col-12'>
