@@ -11,7 +11,7 @@ const PhotoAlbum = () => {
     // Our Students photo album section
     return (
         <div className='container mt-5'>
-            <h1 className='services-title mt-3 mb-2 '>Our Students </h1>
+            <h1 className='services-title mt-3 mb-2 '>My Students </h1>
             <hr style={{ width: '35%', margin: '0  auto' }} className='mb-4' />
             <div className='row'>
                 <div className="col-lg-4 col-12 mb-3">

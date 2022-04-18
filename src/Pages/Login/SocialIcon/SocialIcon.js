@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import google from '../../../images/google.png'
 import github from '../../../images/github.png'
@@ -11,6 +11,8 @@ const SocialIcon = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
 
+    let location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     let errorElements;
 
     if (error || error1) {
@@ -23,14 +25,14 @@ const SocialIcon = () => {
         return <p>Loading...</p>;
     }
     if (user || user1) {
-        navigate('/home')
+        navigate(from, { replace: true });
     }
     return (
         <div>
             {loading}
             <div className='d-flex align-items-center'>
                 <div style={{ height: '1px' }} className='w-50 bg-danger'></div>
-                <p className='mx-4 mt-3'>OR</p>
+                <p className='mx-4 mt-3 text-dark'>OR</p>
                 <div style={{ height: '1px' }} className='w-50 bg-danger'></div>
             </div>
             {errorElements}

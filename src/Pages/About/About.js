@@ -25,7 +25,7 @@ const About = () => {
 
             <div className='row mt-5 align-items-center shadow-lg p-3 mb-5 about rounded'>
                 <h2 className='about-me-title text-center my-3'>Goal</h2>
-                <div className='col-lg-6 col-12 mt-3'>
+                <div className='col-lg-6 col-12 mt-3 py-3'>
                     <h3 className='text-warning'>About My Goal</h3>
 
                     <p >Every person have a goal. To achive this goal they can do their best.
@@ -34,7 +34,7 @@ const About = () => {
 
                     </p>
                 </div>
-                <div className='col-lg-6 col-12 mt-3'>
+                <div className='col-lg-6 col-12 mt-3 py-3'>
 
                     <h3 className='text-warning'>How I work hard?</h3>
                     <p >
