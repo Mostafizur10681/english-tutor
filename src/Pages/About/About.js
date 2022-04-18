@@ -15,7 +15,9 @@ const About = () => {
                     <h3 className='text-warning'> Md.Mostafizur Rahman</h3>
                     <p > I'm a very good learner. I want to learn every day to grow up my skills.
                         I'm also a hard worker and dedicated person.
-                        I have completed my graduation from Daffofil Internation University in Computer Scirnce and Enginerring
+                        I have completed my graduation from Daffofil Internation University in Computer Scirnce and Enginerring.
+                        I'm expert in some programming language like JavaScript, React JS, Phython. I also expert in some framework like
+                        Bootstrap, Tailwind.
                     </p>
                 </div>
             </div>
